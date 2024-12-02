@@ -1,0 +1,91 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: rgba(24, 20, 20, 0.987);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00e1ff;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-box input[type="number"], 
+.user-box input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.user-box label {
+    color: #000;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #005070;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+    box-shadow: 0 0 5px #00e1ff, 0 0 25px #00e1ff, 0 0 50px #00e1ff;
+}
+
+.output {
+    position: relative;
+    width: 10em; 
+    height: 2.5em;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #005070;
+    box-shadow: inset 3px 3px 6px #00e1ff,
+                inset -3px -3px 6px #00e1ff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .4s ease-in-out;
+}
+
+.output:hover {
+    box-shadow: inset 0px 0px 0px #005070,
+                inset 0px 0px 0px #005070;
+    background-color: #005070;
+}
+
+.output:focus {
+    box-shadow: inset 0px 0px 0px #005070,
+                inset 0px 0px 0px #005070;
+    background-color: lightgrey;
+}

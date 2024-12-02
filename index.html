@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate Password</title>
+</head>
+<body>
+    <div class="login-box">
+    <form id="passwordForm">
+        <h1>Generate Password</h1>
+        <label for="length">Longitud:</label>
+        <input type="number" id="length" name="length" min="4" max="50" value="12">
+        <br>
+        <input type="checkbox" id="includeNumbers" name="Numbers" checked>
+        <label for="includeNumbers">Include Numbers</label>
+        <br>
+        <input type="checkbox" id="includeLetters" name="Letters" checked>
+        <label for="includeLetters">Include letters</label>
+        <br>
+        <input type="checkbox" id="includeSymbols" name=Symbols">
+        <label for="includeSymbols">Include Symbols</label>
+        <br>
+        <button type="button" id="generatePassword">Generate Password</button>
+    </form>
+    <div class="box">
+    <div class="output" id="passwordOutput"></div>
+</div>
+    <button id="copyPassword">Copy</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
